@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?pq10q');
-  src:  url('fonts/icomoon.eot?pq10q#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?pq10q') format('truetype'),
-    url('fonts/icomoon.woff?pq10q') format('woff'),
-    url('fonts/icomoon.svg?pq10q#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?flotwz');
+  src:  url('fonts/icomoon.eot?flotwz#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?flotwz') format('truetype'),
+    url('fonts/icomoon.woff?flotwz') format('woff'),
+    url('fonts/icomoon.svg?flotwz#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,31 +25,40 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-icon-arrow:before {
+.icon-checkbox-checked .path1:before {
   content: "\e900";
-  color: #fff;
+  color: rgb(52, 149, 188);
 }
-.icon-icon-bing:before {
+.icon-checkbox-checked .path2:before {
   content: "\e901";
-  color: #fff;
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
 }
-.icon-icon-cart:before {
+.icon-checkbox-unchecked:before {
   content: "\e902";
-  color: #fff;
+  color: #3495bc;
 }
-.icon-icon-four-sides:before {
+.icon-icon-arrow:before {
   content: "\e903";
-  color: #fff;
+  color: #50b0d6;
 }
-.icon-icon-lines:before {
+.icon-icon-envelope:before {
   content: "\e904";
   color: #fff;
 }
-.icon-icon-people:before {
+.icon-icon-facebook:before {
   content: "\e905";
   color: #fff;
 }
-.icon-icon-search:before {
+.icon-icon-instagram:before {
   content: "\e906";
   color: #fff;
+}
+.icon-icon-marker:before {
+  content: "\e907";
+  color: #50b0d6;
+}
+.icon-icon-phone:before {
+  content: "\e908";
+  color: #50b0d6;
 }
