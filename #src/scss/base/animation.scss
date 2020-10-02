@@ -64,33 +64,3 @@
     opacity: 1;
   }
 }
-
-// text reveal
-.text-wrapper, .header-logo {
-  position: relative;
-  overflow: hidden;
-}
-.text-wrapper .text-inner, .text-wrapper .text-inner-hero, .text-wrapper .text-inner-workflow, .header-logo-inner {
-  position: relative;
-  font-weight: 700;
-}
-
-
-// image reveal
-.info-block__image, .cases__item_image {
-  position: relative;
-  overflow: hidden;
-  & .overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: $purpleColor;
-    @media (max-width: $breakpoint-lg) {
-      display: none;
-    }
-  }
-}
-
-

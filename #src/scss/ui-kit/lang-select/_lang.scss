@@ -25,22 +25,16 @@
   &-option {
     position: relative;
     display: block;
-    font-weight: 500;
-    color: #ffffff;
+    font-weight: 700;
+    color: $blueColor;
     line-height: 30px;
     cursor: pointer;
     @include fontSize(16, 18);
     @include transition(.3);
     z-index: 99;
     &:hover {
-      color: #8E6954;
+      color: $blueColor;
     }
-  }
-}
-.header-lang {
-  margin: 0 10px;
-  @media (max-width: $breakpoint-xl) {
-    display: none;
   }
 }
 .lang-select {
@@ -53,21 +47,23 @@
     position: relative;
     display: flex;
     align-items: center;
-    font-weight: 500;
-    color: #ffffff;
+    font-weight: 700;
+    color: $blueColor;
     line-height: 24px;
     background: transparent;
     cursor: pointer;
     @include fontSize(16, 18);
     & span {
-      color: #ffffff;
+      color: $blueColor;
+      font-weight: 700;
+      width: 25px;
     }
     & i {
-      margin-left: 6px;
-      transform: rotate(90deg);
-      @include transition(.3);
+      margin-left: 5px;
       &:before {
-        font-size: 10px;
+        color: $blueColor;
+        font-size: 13px;
+        font-weight: 700;
         display: block;
       }
     }
@@ -80,7 +76,7 @@
     }
     & .lang-select__trigger {
       & i {
-        transform: rotate(-90deg);
+        transform: rotate(-180deg);
       }
     }
   }

@@ -2,11 +2,61 @@
 @import "../abstracts/variables";
 
 .body-padding {
-  padding-top: 70px;
-  @media (min-width: $breakpoint-xxl) {
-    padding-top: 90px;
+  padding-top: 121px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 102;
+  background: $whiteColor;
+  &-top {
+    padding: 7px 0;
+    &:before {
+      content: '';
+      background: rgba(80, 176, 214, 0.3);
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      left: 0;
+      top: 39px;
+    }
+    &__links {
+      justify-content: flex-end;
+      & li {
+        color: $blueColor;
+        display: flex;
+        align-items: center;
+        margin-left: 33px;
+      }
+      & a {
+        color: $blueColor;
+      }
+      & i {
+        margin-right: 13px;
+      }
+    }
+  }
+  &-logo {
+
+  }
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+  &-lang {
+    margin: 0 40px 0 20px;
   }
 }
+
+
+
+
+// background: rgba(80, 176, 214, 0.3);
 
 
 

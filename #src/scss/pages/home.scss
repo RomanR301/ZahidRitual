@@ -1,3 +1,50 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
+.main-screen {
+  position: relative;
+  // height: calc(90vh - 112px);
+  height: 900px;
+  &:before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(360deg, #FFFFFF 26.67%, rgba(255, 255, 255, 0) 100%);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+  }
+  &__background {
+    & img {
+      object-fit: cover;
+    }
+  }
+  &__images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  &__text {
+    margin-top: 120px;
+    & h1, & p {
+      color: $whiteColor;
+      margin-bottom: 25px;
+    }
+    &_container {
+      z-index: 1;
+    }
+  }
+}
+
+.cloud {
+  position: absolute;
+  &-big {
+    left: 0;
+    bottom: 140px;
+  }
+  &-small {
+    top: -110px;
+    left: 30%;
+  }
+}
