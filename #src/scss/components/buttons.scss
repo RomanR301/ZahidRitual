@@ -23,9 +23,21 @@
   &-secondary {
     background: $whiteColor;
     color: $blueColor;
+    border: 2px solid $blueColor;
     &:hover {
       color: $whiteColor;
       background: $blueColor;
+    }
+  }
+  &-white {
+    background: $whiteColor;
+    color: $blueColor;
+    &:hover {
+      color: $whiteColor;
+      background: $blueColor;
+    }
+    &.outlined {
+      border: 2px solid $whiteColor;
     }
   }
 }
