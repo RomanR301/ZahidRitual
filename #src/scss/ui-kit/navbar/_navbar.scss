@@ -12,7 +12,7 @@
     height: 100%;
     top: 0;
     right: -120vw;
-    background: $blackColor;
+    background: $whiteColor;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,25 +20,39 @@
     @include transition(.3);
     padding: 10px 10px 60px 10px;
   }
+  @media (max-width: $breakpoint-md) {
+    align-items: flex-start;
+  }
   &.active {
     right: 0;
   }
 }
 .menu {
+  flex-direction: row;
   @media (max-width: $breakpoint-xl) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+  }
+  @media (max-width: $breakpoint-md) {
+    align-items: flex-start;
+    margin-bottom: 20px;
   }
   &-item {
     margin: 0 20px;
+    @media (max-width: $breakpoint-xl) {
+      margin: 0 0 10px 0;
+    }
     & a {
       display: block;
       font-size: 16px;
       color: $blueColor;
       font-weight: 700;
       position: relative;
+      @media (max-width: $breakpoint-xl) {
+        font-family: 'PlayfairDisplay', sans-serif;
+        font-size: 30px;
+      }
       &:before {
         content: '';
         position: absolute;
@@ -68,6 +82,7 @@
   margin-right: -15px;
   position: relative;
   z-index: 22;
+  cursor: pointer;
   @media (max-width: $breakpoint-xl) {
     display: block;
   } 
@@ -76,7 +91,7 @@
     right: 15px;
     display: block;
     width: 25px;
-    background: $whiteColor;
+    background: $blueColor;
     height: 3px;
     border-radius: 10px;
     @include transition(.3);
@@ -95,7 +110,7 @@
   }
   &.open {
     & span {
-      background: $whiteColor;
+      background: $blueColor;
     }
     & span:nth-child(1) {
       top: calc(50% - 2.5px);

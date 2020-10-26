@@ -1,3 +1,39 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
+
+.contacts {
+  &__info {
+    border-radius: 15px;
+    background: $blueColor;
+    padding: 30px;
+    &_list {
+      max-width: 70%;
+    }
+    & li {
+      color: $whiteColor;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    & span {
+      color: $whiteColor;
+    }
+    & i {
+      margin-right: 15px;
+      font-size: 20px;
+      &:before {
+        color: $whiteColor;
+      }
+    }
+    & a {
+      color: $whiteColor;
+    }
+  }
+  &__form {
+    
+  }
+}

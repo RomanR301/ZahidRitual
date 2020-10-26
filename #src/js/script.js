@@ -4,6 +4,7 @@ let front = {
   $body: $('body'),
   init: function () {
       this.events();
+      $('.mask-phone').mask('+38 0(99)-999-99-99');
   },
   toggleNav: function () {
     if (!this.hamburger.hasClass('open')) {
