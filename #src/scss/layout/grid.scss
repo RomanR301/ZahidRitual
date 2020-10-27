@@ -46,8 +46,8 @@
 .m-row {
   margin: 0 -15px;
   width: unset;
-  @media (max-width: $breakpoint-sm) {
-    margin: 0 !important;
+  @media (max-width: $breakpoint-md) {
+    margin: 0;
   }
 }
 

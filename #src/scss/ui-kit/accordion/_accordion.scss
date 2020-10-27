@@ -11,6 +11,9 @@
     @include transition(.2);
     overflow: hidden;
     margin-bottom: 30px;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 20px;
+    }
     &.active {
       color: $whiteColor;
       background: $blueColor;
@@ -48,8 +51,11 @@
     color: $blueColor;
     justify-content: space-between;
     align-items: center;
-    @include fontSize(18, 20);
+    @include fontSize(16, 20);
     @include transition(.3);
+    @media (max-width: $breakpoint-md) {
+      padding: 15px;
+    }
     & i {
       min-width: 24px;
       min-height: 24px;

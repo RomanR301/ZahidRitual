@@ -7,6 +7,12 @@
     border-radius: 15px;
     background: $blueColor;
     padding: 30px;
+    @media (max-width: $breakpoint-lg) {
+      padding: 20px;
+    }
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 30px;
+    }
     &_list {
       max-width: 70%;
     }

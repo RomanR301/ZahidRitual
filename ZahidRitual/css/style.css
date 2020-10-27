@@ -842,7 +842,7 @@ input[type=number] {
       -ms-flex-align: center;
           align-items: center;
   font-size: 20px;
-  font-size: calc(18px + (20 - 18) * ((100vw - 300px) / (1900 - 300)));
+  font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1900 - 300)));
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -956,6 +956,7 @@ input[type=number] {
 
 .product-item__image {
   height: 280px;
+  display: block;
 }
 
 .product-item__image img {
@@ -1428,6 +1429,7 @@ input[type=number] {
 
 .footer-cloud {
   position: absolute;
+  pointer-events: none;
 }
 
 .footer-cloud-big {
@@ -1445,6 +1447,7 @@ input[type=number] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2420,6 +2423,42 @@ input[type=number] {
 }
 
 @media (max-width: 991px) {
+  .footer {
+    padding: 30px 5px 0 5px;
+  }
+
+  .footer .row {
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer-row ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer-row li {
+    margin: 8px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .footer-logo {
+    margin-bottom: 30px;
+  }
+
+  .footer-contacts ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
   .main-screen:after {
     content: '';
     background: rgba(0, 0, 0, 0.3);
@@ -2440,6 +2479,14 @@ input[type=number] {
 
   .info-block__buttons > span {
     margin: 10px 0;
+  }
+
+  .faq__image {
+    display: none;
+  }
+
+  .contacts__info {
+    padding: 20px;
   }
 }
 
@@ -2466,10 +2513,22 @@ input[type=number] {
     margin-top: 50px;
   }
 
+  .accordion__item {
+    margin-bottom: 20px;
+  }
+
+  .accordion__button {
+    padding: 15px;
+  }
+
   .btn {
     font-size: 14px;
     text-align: center;
     padding: 8px 10px;
+  }
+
+  .m-row {
+    margin: 0;
   }
 
   .m-0-mob {
@@ -2491,6 +2550,14 @@ input[type=number] {
     margin-bottom: 20px;
   }
 
+  .home section {
+    margin-bottom: 30px;
+  }
+
+  .info-block__image {
+    margin-bottom: 30px;
+  }
+
   .why-us {
     padding: 20px 0;
   }
@@ -2500,6 +2567,9 @@ input[type=number] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 
   .why-us__numbers_item {
@@ -2547,11 +2617,9 @@ input[type=number] {
     padding: 5px 10px;
     vertical-align: middle;
   }
-}
 
-@media (max-width: 575px) {
-  .m-row {
-    margin: 0 !important;
+  .contacts__info {
+    margin-bottom: 30px;
   }
 }
 

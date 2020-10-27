@@ -3,6 +3,9 @@
 
 .home section {
   margin-bottom: 60px;
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 30px;
+  }
   &.main-screen {
     margin-bottom: 0;
   }
@@ -87,6 +90,9 @@
   &__image {
     border-radius: 15px;
     overflow: hidden;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 30px;
+    }
   }
   &__text {
     margin-bottom: 25px;
@@ -219,6 +225,7 @@
     align-items: center;
     @media (max-width: $breakpoint-md) {
       flex-direction: column;
+      align-items: flex-start;
     }
     &_item {
       align-items: center;
@@ -360,6 +367,9 @@
   &__image {
     border-radius: 15px;
     overflow: hidden;
+    @media (max-width: $breakpoint-lg) {
+      display: none;
+    }
     & img {
       object-fit: cover;
     }

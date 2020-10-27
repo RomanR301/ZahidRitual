@@ -6,8 +6,12 @@
   padding: 60px 0;
   position: relative;
   overflow: hidden;
+  @media (max-width: $breakpoint-lg) {
+    padding: 30px 5px 0 5px;
+  }
   &-cloud {
     position: absolute;
+    pointer-events: none;
     &-big {
       right: -100px;
       bottom: -10px;
@@ -19,19 +23,31 @@
   }
   & .row {
     flex-direction: column;
+    text-align: center;
     align-items: center;
+    @media (max-width: $breakpoint-lg) {
+      width: 100%;
+      margin: 0;
+    }
   }
   &-row {
     margin-bottom: 30px;
     color: $whiteColor;
     & ul {
       display: flex;
+      @media (max-width: $breakpoint-lg) {
+        justify-content: center;
+      }
     }
     & li {
       margin: 0 15px;
       display: flex;
       align-items: center;
       color: $whiteColor;
+      @media (max-width: $breakpoint-lg) {
+        margin: 8px;
+        align-items: flex-start;
+      }
     }
     & a {
       color: $whiteColor;
@@ -66,6 +82,9 @@
     margin-bottom: 45px;
     font-size: 45px;
     font-family: 'PlayfairDisplay', sans-serif;
+    @media (max-width: $breakpoint-lg) {
+      margin-bottom: 30px;
+    }
   }
   &-made-by {
     & span {
@@ -94,5 +113,12 @@
         }
       }
     }
+  }
+}
+
+.footer-contacts ul{
+  @media (max-width: $breakpoint-lg) {
+    flex-direction: column;
+    align-items: center;
   }
 }
