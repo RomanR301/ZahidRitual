@@ -10,7 +10,7 @@
 @import "./base/animation.scss";
 
 // ui-kit
-// @import "./ui-kit/breadkrumb/_breadkrumb.scss";
+@import "./ui-kit/breadkrumb/_breadkrumb.scss";
 // @import "./ui-kit/pagination-wocommerce/_pagination-wocommerce";
 // @import "./ui-kit/seo-component/_seo-component.scss";
 @import "./ui-kit/navbar/_navbar.scss";
@@ -30,7 +30,7 @@
 @import "./components/buttons.scss";
 @import "./components/product-card.scss";
 
-// @import "./components/entry-content.scss";
+@import "./components/entry-content.scss";
 @import "./components/forms.scss";
 // @import "./components/other.scss";
 // @import "./components/carousel.scss";
@@ -47,3 +47,6 @@
 // pages 
 @import "./pages/home.scss";
 @import "./pages/contacts.scss";
+@import "./pages/about.scss";
+@import "./pages/services.scss";
+@import "./pages/product.scss";

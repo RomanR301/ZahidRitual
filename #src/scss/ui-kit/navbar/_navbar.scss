@@ -73,6 +73,11 @@
         }
       }
     }
+    &.current-menu-item {
+      & a:before {
+        opacity: 1;
+      }
+    }
   }
 }
 .hamburger {

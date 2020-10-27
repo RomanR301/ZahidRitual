@@ -34,9 +34,9 @@
           </ul>
         </div>
         <div class="header-main">
-          <div class="header-logo default-icon">
+          <a href="index.html" class="header-logo default-icon">
             <img src="./img/main-logo.svg" alt="LOGO">
-          </div>
+          </a>
           <div class="navbar">
             <ul class="menu d-flex">
               <li class="menu-item">
@@ -144,7 +144,7 @@
             </p>
           </div>
           <div class="info-block__buttons">
-            <a href="#" class="btn btn-primary modalTrigger" data-modal="#callback">Залишіть заявку</a>
+            <a href="#" class="btn btn-primary modalTrigger" data-modal="#callback-modal">Залишіть заявку</a>
             <span>або</span>
             <a href="tel:+380665891259" class="btn btn-secondary"><span>Зателефонуйте нам</span>+380 (66) 589 12 59</a>
           </div>
@@ -664,21 +664,25 @@
       <div class="modal__close">
 
       </div>
-      <div class="modal__heading section-title --semibold">НАПИШІТЬ НАМ</div>
-      <div class="modal__form">
+      <div class="section__heading">
+        <h2 class="heading-2 blueText">Зверніться до нас</h2>
+      </div>
+      <div class="contacts__form">
         <form action="">
-          <div class="form-control">
-            <input type="email" name="callback_email" placeholder="Email" required>
-          </div>
-          <div class="form-control">
-            <input type="tel" class="mask-phone" placeholder="+38 0(__)-___-__-__" required>
-          </div>
-          <div class="form-control form-textarea">
-            <textarea name="callback_message" placeholder="Ваше повідомлення" required></textarea>
-          </div>
-          <div class="form-control form-submit">
-            <button class="btn btn-primary">НАДІСЛАТИ</button>
-          </div>
+          <form action="">
+            <div class="form-control">
+              <input type="email" name="callback_name" placeholder="Ваше ім’я" required>
+            </div>
+            <div class="form-control">
+              <input type="tel" class="mask-phone" placeholder="+38 0(__)-___-__-__" required>
+            </div>
+            <div class="form-control form-textarea">
+              <textarea name="callback_message" placeholder="Повідомлення" required></textarea>
+            </div>
+            <div class="form-control form-submit">
+              <button class="btn btn-primary">НАДІСЛАТИ</button>
+            </div>
+          </form>
         </form>
       </div>
     </div>

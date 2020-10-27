@@ -1,0 +1,34 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.catalog {
+  &-list {
+    background: #E8E8E8;
+    border-radius: 15px;
+    padding: 20px;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 30px;
+    }
+    &__heading {
+      color: #131313;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    & a {
+      @include transition(.3);
+      &:hover {
+        color: $blueColor;
+      }
+    }
+    & ul {
+      & li {
+        margin-bottom: 5px;
+        &.active {
+          & a {
+            color: $blueColor;
+          }
+        }
+      }
+    }
+  }
+}
