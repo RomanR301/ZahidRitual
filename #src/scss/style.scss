@@ -41,7 +41,7 @@
 @import "./layout/footer.scss";
 
 // Vendor
-// @import "./vendor/swiper.scss";
+@import "./vendor/swiper.scss";
 
 
 // pages 
@@ -50,3 +50,4 @@
 @import "./pages/about.scss";
 @import "./pages/services.scss";
 @import "./pages/product.scss";
+@import "./pages/other.scss";

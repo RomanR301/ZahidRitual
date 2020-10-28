@@ -1,2 +1,81 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
+
+.other-page {
+  height: calc(100vh - 121px);
+  margin-bottom: 0;
+  overflow: hidden;
+  @media (max-width: $breakpoint-xl) {
+    height: calc(100vh - 75px);
+  }
+  & .btn {
+    padding: 10px 35px;
+  }
+  &.error-page {
+    & h1 {
+      font-size: 150px;
+    }
+    & .other-page-text {
+      margin-top: 0;
+    }
+  }
+  &-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  
+    @media (max-width: $breakpoint-lg) {
+      &:before {
+        content: '';
+        background: rgba(0,0,0,.3);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    }
+    & img {
+      object-fit: cover;
+    }
+  }
+  &-text {
+    margin-top: 50px;
+    z-index: 1;
+    & h1 {
+      font-size: 100px;
+      font-family: 'PlayfairDisplay', sans-serif;
+      margin-bottom: 10px;
+      color: $whiteColor;
+      line-height: 1.5;
+      @media (max-width: $breakpoint-md) {
+        font-size: 70px;
+      }
+    }
+  }
+  &-subtitle {
+    margin-bottom: 10px;
+    color: $whiteColor;
+  }
+  &-text {
+    margin-bottom: 10px;
+    color: $whiteColor;
+    max-width: 60%;
+    @media (max-width: $breakpoint-md) {
+      max-width: 100%;
+    }
+  }
+  & .btn {
+    display: inline-block;
+  }
+  & .cloud-big {
+    bottom: -40px;
+    z-index: -1;
+  }
+  & .cloud-small {
+
+  }
+}

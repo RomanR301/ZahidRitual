@@ -15,6 +15,7 @@
   z-index: 999;
   outline: 0;
   overflow: hidden;
+  overflow-y: auto;
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-overflow-scrolling: touch;
   &.open {
@@ -56,6 +57,9 @@
     left: 0;
     align-items: center;
     overflow-y: auto;
+    @media (max-width: $breakpoint-md) {
+      position: static;
+    }
   }
   &__content {
     position: relative;
@@ -91,14 +95,14 @@
  
 
 
-.modal-callback {
+.modal-callback, .modal-order {
   & .modal__content {
     border-radius: 20px;
     background: $whiteColor;
     padding: 36px;
     @media (max-width: $breakpoint-md) {
       padding: 25px 15px;
-      margin: 0 10px;
+      margin: 10px;
     }
   }
 }
@@ -117,3 +121,27 @@
   margin-bottom: 36px;
 }
 
+
+.modal-order {
+  & .modal__content {
+    width: 750px;
+    padding: 30px;
+  }
+  &__image {
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  .product-single__info_item span:first-child {
+    min-width: 120px;
+  }
+  & .btn {
+    @media (max-width: $breakpoint-md) {
+      font-size: 16px;
+      padding: 15px 30px;
+    }
+  }
+}

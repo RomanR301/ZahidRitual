@@ -5,6 +5,27 @@ let front = {
   init: function () {
       this.events();
       $('.mask-phone').mask('+38 0(99)-999-99-99');
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        loop: true,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-prev",
+            prevEl: ".swiper-button-next"
+        },
+        breakpoints: {
+            320: {
+              slidesPerView: 1,
+            },
+            567: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+          }
+
+      });
   },
   toggleNav: function () {
     if (!this.hamburger.hasClass('open')) {
