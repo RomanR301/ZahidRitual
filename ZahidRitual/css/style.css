@@ -676,6 +676,16 @@ input[type=number] {
   width: 650px;
 }
 
+.modal-callback .modal__body {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -739,9 +749,6 @@ input[type=number] {
   top: 0;
   bottom: 0;
   left: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   overflow-y: auto;
 }
 
@@ -3855,6 +3862,10 @@ section.services {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-bottom: 20px;
+  }
+
+  .header-button .btn {
+    padding: 12px 35px;
   }
 
   section {
