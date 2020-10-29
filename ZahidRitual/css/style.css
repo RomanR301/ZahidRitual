@@ -2556,13 +2556,57 @@ section.services {
 }
 
 .cloud-big {
-  left: 0;
-  bottom: 140px;
+  bottom: 200px;
+  left: 0%;
+  -webkit-animation: movecloudsLeft 60s linear infinite;
+          animation: movecloudsLeft 60s linear infinite;
 }
 
 .cloud-small {
   top: -110px;
   left: 30%;
+  -webkit-animation: movecloudsRight 60s linear infinite;
+          animation: movecloudsRight 60s linear infinite;
+}
+
+@-webkit-keyframes movecloudsLeft {
+  0% {
+    margin-left: -800px;
+  }
+
+  100% {
+    margin-left: 2000px;
+  }
+}
+
+@keyframes movecloudsLeft {
+  0% {
+    margin-left: -800px;
+  }
+
+  100% {
+    margin-left: 2000px;
+  }
+}
+
+@-webkit-keyframes movecloudsRight {
+  0% {
+    margin-left: 1500px;
+  }
+
+  100% {
+    margin-left: -1200px;
+  }
+}
+
+@keyframes movecloudsRight {
+  0% {
+    margin-left: 1500px;
+  }
+
+  100% {
+    margin-left: -1200px;
+  }
 }
 
 .info-block {

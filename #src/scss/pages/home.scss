@@ -67,14 +67,27 @@ section {
 .cloud {
   position: absolute;
   &-big {
-    left: 0;
-    bottom: 140px;
+    bottom: 200px;
+    left: 0%;
+    animation: movecloudsLeft 60s linear infinite;
   }
   &-small {
     top: -110px;
     left: 30%;
+    animation: movecloudsRight 60s linear infinite;
   }
 }
+
+@keyframes movecloudsLeft {
+  0% {margin-left: -800px;}
+	100% {margin-left: 2000px;}
+}
+
+@keyframes movecloudsRight {
+  0% {margin-left: 1500px;}
+  100% {margin-left: -1200px;}
+}
+
 
 .info-block {
   position: relative;
